@@ -1,0 +1,221 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = " ";//declaring the string
+            int sum=0 ;//declaring and initialising the value for finding the sum of all alphabets
+
+            Console.WriteLine("Enter the Name");
+            name = Console.ReadLine();//getting the string form the console
+
+            Console.Write("\nYour Name : ");
+            Console.WriteLine(name);//printting the string into the console
+
+            char[] ch = name.ToCharArray();//converting the string into character array
+
+            int ni =ch.Length;//finding lenght of the string
+            Console.WriteLine("\nThe No of Character : {0}\n",ni);
+            
+            
+            int a = 1,b=2,c=3,d=4,e=5,f=8,g=3,h=5,i=1,j=1,k=2,l=3,m=4,n=5,o=7,p=8,q=1,r=2,s=3,t=4,u=6,v=6,w=6,x=5,y=1,z=7;
+            Console.WriteLine("Numerlogy Numbers\n");
+            foreach (char ie in name)
+            {
+                if(ie == 'a'|| ie=='A')
+                {
+                    sum = a + sum;
+                    Console.WriteLine("a->1");
+                }
+
+                if (ie == 'b'|| ie=='B')
+                {
+                    sum = b + sum;
+                    Console.WriteLine("b->2");
+
+                }
+
+                if (ie == 'c'|| ie=='C')
+                {
+                    sum = c + sum;
+                    Console.WriteLine("c->3");
+                }
+
+                if (ie == 'd'||ie=='D')
+                {
+                    sum = d + sum;
+                    Console.WriteLine("d->4");
+                }
+
+                if (ie == 'e'|| ie=='E')
+                {
+                    sum = e + sum;
+                    Console.WriteLine("e->5");
+                }
+
+                if (ie == 'f'||ie=='F')
+                {
+                    sum = f + sum;
+                    Console.WriteLine("f->8");
+                }
+
+                if (ie == 'g'||ie=='G')
+                {
+                    sum = g + sum;
+                    Console.WriteLine("g->3");
+                }
+
+                if (ie == 'h'||ie=='H')
+                {
+                    sum = h + sum;
+                    Console.WriteLine("h->5");
+                }
+
+                if (ie == 'i'|| ie=='I')
+                {
+                    sum = i + sum;
+                    Console.WriteLine("i->1");
+                }
+
+                if (ie == 'j'|| ie=='J')
+                {
+                    sum = j + sum;
+                    Console.WriteLine("j->1");
+                }
+
+                if (ie == 'k'|| ie=='K')
+                {
+                    sum = k + sum;
+                    Console.WriteLine("k->2");
+                }
+
+                if (ie == 'l'|| ie=='L')
+                {
+                    sum = l + sum;
+                    Console.WriteLine("l->3");
+                }
+
+                if (ie == 'm'|| ie=='M')
+                {
+                    sum = m + sum;
+                    Console.WriteLine("m->4");
+                }
+
+                if (ie == 'n'||ie=='N')
+                {
+                    sum = n + sum;
+                    Console.WriteLine("n->5");
+                }
+
+                if (ie == 'o'||ie=='O')
+                {
+                    sum = o + sum;
+                    Console.WriteLine("o->7");
+                }
+
+                if (ie == 'p'||ie=='P')
+                {
+                    sum = p + sum;
+                    Console.WriteLine("p->8");
+                }
+
+                if (ie == 'q'||ie=='Q')
+                {
+                    sum = q + sum;
+                    Console.WriteLine("q->1");
+                }
+
+                if (ie == 'r'||ie=='R')
+                {
+                    sum = r + sum;
+                    Console.WriteLine("r->2");
+                }
+
+                if (ie == 's'||ie=='S')
+                {
+                    sum = s + sum;
+                    Console.WriteLine("s->3");
+                }
+
+                if (ie == 'u'||ie=='U')
+                {
+                    sum = u + sum;
+                    Console.WriteLine("u->6");
+                }
+
+                if (ie == 'v'||ie=='V')
+                {
+                    sum = v + sum;
+                    Console.WriteLine("v->6");
+                }
+
+                if (ie == 'w'||ie=='W')
+                {
+                    sum = w + sum;
+                    Console.WriteLine("w->6");
+                }
+
+                if (ie == 'x'||ie=='X')
+                {
+                    sum = x + sum;
+                    Console.WriteLine("x->5");
+                }
+
+                if (ie == 'y'||ie=='Y')
+                {
+                    sum = y + sum;
+                    Console.WriteLine("y->1");
+                }
+
+                if (ie == 'z'||ie=='Z')
+                {
+                    sum = z + sum;
+                    Console.WriteLine("z->7");
+                }
+
+                if (ie == 't'||ie=='T')
+                {
+                    sum = t + sum;
+                    Console.WriteLine("t->4");
+                }
+            }
+
+            int ri;
+            int sum1=0;
+            
+            //finding sum of numbers
+            while (sum != 0)
+            {
+                ri = sum % 10;
+                sum1 = sum1 + ri;
+                sum = sum / 10;
+            }
+            string si = Convert.ToString(sum1);
+            int ai = si.Length;
+            
+            int sum12=0;
+
+            if (ai == 2)
+            {
+                while (sum1 != 0)
+                {
+                    ri = sum1 % 10;
+                    sum12 = sum12 + ri;
+                    sum1 = sum1 / 10;
+                }
+                Console.WriteLine("\nThe Numerlogy Value is {0}",sum12);
+            }
+            else
+            {
+                Console.Write("\nThe Numerlogy Value is {0}", sum1);
+            }
+        }
+    }
+}
