@@ -32,7 +32,7 @@ namespace ConsoleApp2
                 if(ie == 'a'|| ie=='A')
                 {
                     sum = a + sum;
-                    Console.WriteLine("a->1");
+                    Console.WriteLine("a->1");//Printing 
                 }
 
                 if (ie == 'b'|| ie=='B')
